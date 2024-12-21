@@ -13,6 +13,8 @@
         <nav>
             <ul>
                 <li><a href="#about">Moi</a></li>
+                <li><a href="#education">Parcours</a></li>
+                <li><a href="#school">Ecole</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -34,22 +36,55 @@
         <a href="assets/fiche.xlsx" download>
             <button type="button" class="btn">Visualiser ma fiche de synthèse</button>
         </a>
-
     </section>
-    <section id="education">
-        <h2>Parcours Étudiant</h2>
-        <ul>
-            <li><strong>BTS SIO SLAM</strong> - IPSSI, Septembre 2023 à présent</li>
-            <li><strong>Baccalauréat Général</strong> - Lycée Emilie de Breteuil, 2020 à 2023</li>
-        </ul>
+    
+    <section id="timeline">
+        <h2>Mon Parcours</h2>
+        
+        <!-- Parcours Étudiant -->
+        <div class="timeline-section">
+            <h3>Parcours Étudiant</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>BTS SIO SLAM</h4>
+                        <p><strong>IPSSI</strong> - Septembre 2023 à présent</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Baccalauréat Général</h4>
+                        <p><strong>Lycée Emilie de Breteuil</strong> - 2020 à 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Parcours Professionnel -->
+        <div class="timeline-section">
+            <h3>Parcours Professionnel</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Stage Développeur Web</h4>
+                        <p><strong>Osmoz</strong> - Mai 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Alternant Développeur Web</h4>
+                        <p><strong>Lovely Smile</strong> - Septembre 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="professional">
-        <h2>Parcours Professionnel</h2>
-        <ul>
-            <li><strong>Stage Développeur Web </strong> - Osmoz, Mai 2024</li>
-            <li><strong>Alternant Développeur Web </strong> - Lovely Smile, Septembre 2024</li>
-        </ul>
-    </section>
+    
+    
     <section id="school">
         <div class="container">
             <h2>IPSSI Yvelines</h2>
@@ -59,21 +94,16 @@
                     <h3><i class="fas fa-school"></i> À propos de l'IPSSI</h3>
                     <p>L'IPSSI est une école d’excellence spécialisée dans les domaines de l’informatique, la
                         cybersécurité, et le développement web.</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Adresse :</p>
-                    <p>Immeuble Le Sésame, 8 Rue Germain Soufflot, 78180 Montigny-le-Bretonneux</p>
-                    <p><i class="fas fa-clock"></i> Horaires :</p>
-                    <p>Lundi - Vendredi : 9h - 17h45</p>
-                    <p><i class="fas fa-phone"></i> Contact : 01 81 80 38 50
-                    </p>
-                </div>
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.908327100691!2d2.0395402999999997!3d48.784716399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e687f6e551bc3d%3A0x2e27be3edbf16f8b!2sIpssi%20Yvelines%20-%20School%20Computer%20Cybers%C3%A9curit%C3%A9!5e0!3m2!1sen!2sfr!4v1624664763912!5m2!1sen!2sfr"
-                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="details">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse : </strong> 8 Rue Germain Soufflot, 78180 Montigny-le-Bretonneux</p>
+                        <p><i class="fas fa-clock"></i> <strong>Horaires :</strong> Lundi - Vendredi : 9h - 17h45</p>
+                        <p><i class="fas fa-phone"></i> <strong>Contact :</strong> 01 81 80 38 50</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
 
     <!-- Ajout de la section BTS SIO et options SLAM/SISR -->
