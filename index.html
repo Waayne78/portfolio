@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
   </head>
 
   <body>
@@ -197,9 +198,14 @@
               <h3>Osmoz</h3>
               <p>Site officiel de l'association Osmoz</p>
               <a
-                href="https://osmoz.center/"
+                href="#"
                 class="project-link"
-                target="_blank"
+                data-title="Osmoz"
+                data-application="Application Web"
+                data-languages="HTML, CSS, JavaScript"
+                data-git="https://github.com/Waayne78/OSMOZ"
+                data-doc="https://example.com/osmoz-doc"
+                data-description="Développement front-end et back-end pour le site de l'association."
               >
                 Voir le projet <i class="fas fa-external-link-alt"></i>
               </a>
@@ -207,16 +213,20 @@
           </div>
           <div class="project-card">
             <div class="project-image">
-              <img src="assets/freemeal.png" alt="FreeMeal" />
+              <img src="assets/ap3.png" alt="FreeMeal" />
             </div>
             <div class="project-content">
-              <h3>FreeMeal</h3>
+              <h3>Projet AP3</h3>
               <p>Projet scolaire avec le professeur</p>
               <a
-                href="assets/freemeal.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 class="project-link"
+                data-title="FreeMeal"
+                data-application="Application Web"
+                data-languages="HTML, CSS, PHP"
+                data-git="https://github.com/example/freemeal"
+                data-doc="https://example.com/freemeal-doc"
+                data-description="Application de gestion des repas pour les étudiants."
               >
                 Voir le projet <i class="fas fa-external-link-alt"></i>
               </a>
@@ -245,9 +255,55 @@
             <div class="project-content">
               <h3>GLPI</h3>
               <p>Projet scolaire avec le professeur</p>
-              <a href="assets/glpi.pdf" class="project-link"  href="assets/freemeal.pdf"
-              target="_blank">
-              Voir le projet <i class="fas fa-external-link-alt"></i>
+              <a
+                href="assets/glpi.pdf"
+                class="project-link"
+                href="assets/freemeal.pdf"
+                target="_blank"
+              >
+                Voir le projet <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/ap4.webp" alt="FreeMeal" />
+            </div>
+            <div class="project-content">
+              <h3>Projet AP4</h3>
+              <p>Projet scolaire avec le professeur</p>
+              <a
+                href="#"
+                class="project-link"
+                data-title="FreeMeal"
+                data-application="Application Web"
+                data-languages="HTML, CSS, PHP"
+                data-git="https://github.com/example/freemeal"
+                data-doc="https://example.com/freemeal-doc"
+                data-description="Application de gestion des repas pour les étudiants."
+              >
+                Voir le projet <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/litsa.png" alt="FreeMeal" />
+            </div>
+            <div class="project-content">
+              <h3>Litsa et ses Loulous</h3>
+              <p>Projet scolaire avec le professeur</p>
+              <a
+                href="#"
+                class="project-link"
+                data-title="FreeMeal"
+                data-application="Application Web"
+                data-languages="HTML, CSS, PHP"
+                data-git="https://github.com/example/freemeal"
+                data-doc="https://example.com/freemeal-doc"
+                data-description="Application de gestion des repas pour les étudiants."
+              >
+                Voir le projet <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
           </div>
@@ -303,6 +359,18 @@
         </div>
       </div>
     </section>
+
+    <div id="project-popup" class="popup hidden">
+      <div class="popup-content">
+        <span class="popup-close">&times;</span>
+        <h2 id="popup-title">Projet</h2>
+        <p><strong>Application :</strong> <span id="popup-application">Application Web</span></p>
+        <p><strong>Langages :</strong> <span id="popup-languages">HTML, CSS, JavaScript</span></p>
+        <p><strong>Dépôt Git :</strong> <a id="popup-git" href="#" target="_blank">Lien Git</a></p>
+        <p><strong>Documentation :</strong> <a id="popup-doc" href="#" target="_blank">Lien Documentation</a></p>
+        <p><strong>Description :</strong> <span id="popup-description">Description du projet</span></p>
+      </div>
+    </div>
 
     <footer>
       <div class="container">
